@@ -1,7 +1,33 @@
-{{position?.company?.name}} <br> <br>
+<div class="position">
 
-{{position?.startDate?.month | date:'MMMM'}} {{position?.startDate?.year}}<br> <br>
+    <div class="left">
+        <div class="name">
+            {{position?.company?.name}}
+        </div>
+        <br>
+        <div class="dates">
+            {{position?.startDate?.month | date:'MMM'}} {{position?.startDate?.year}}
 
-{{position?.title}}<br> <br>
+            <span *ngIf="!position?.isCurrent">
+                - {{position?.endDate?.month | date:'MMM'}} {{position?.endDate?.year}}
+            </span>
 
-{{position?.summary}}
+               <span *ngIf="position?.isCurrent">
+                Current
+            </span>
+            
+        </div>
+    </div>
+
+    <div class="filler"></div>
+
+    <div class="right">
+        <div class="title">
+            {{position?.title}}
+        </div>
+        <br>
+        <div class="summary">
+            {{position?.summary}}
+        </div>
+    </div>
+</div>

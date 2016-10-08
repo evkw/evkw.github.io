@@ -5,10 +5,10 @@ import { Component, Input } from '@angular/core';
 @Component({
     moduleId: module.id,
     selector: 'experience-position',
-    templateUrl: 'experience-position.component.html'
+    templateUrl: 'experience-position.component.html',
+    styleUrls: ['experience-position.component.css']
 })
 export class ExperiencePositionComponent {
     @Input() position: any;
-    private startDate: Date = new Date();
     constructor() { }
 }

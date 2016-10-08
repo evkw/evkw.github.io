@@ -8,5 +8,10 @@
 
     <div class="position" *ngFor="let position of contact?.threePastPositions?.values">
         <experience-position [position]="position"></experience-position>
+
     </div>
+    <div class="title">
+        Skills
+    </div>
+    <experience-skills [skills]="contact?.skills?.values"></experience-skills>
 </div>

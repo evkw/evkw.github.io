@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 
 import { ExperienceComponent } from './experience.component';
 import { ExperiencePositionComponent } from '../experience-position/experience-position.component';
+import { ExperienceSkillsComponent } from '../experience-skills/experience-skills.component';
 import { ContactService } from '../contact/contact.service';
 
 @NgModule({
@@ -11,7 +12,8 @@ import { ContactService } from '../contact/contact.service';
     declarations:
     [
         ExperienceComponent,
-        ExperiencePositionComponent
+        ExperiencePositionComponent,
+        ExperienceSkillsComponent
     ],
     providers: [ContactService],
 })
