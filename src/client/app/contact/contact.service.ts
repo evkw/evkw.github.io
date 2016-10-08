@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { Http } from '@angular/http';
 
-import { Contact } from './contact.model';
+import { Contact, Social } from './contact.model';
 
 @Injectable()
 export class ContactService {
@@ -11,5 +11,10 @@ export class ContactService {
     getContactInfo() {
       return this.http.get('../assets/linkedin.json')
         .map(res => <Contact>res.json());
+    }
+
+    getSocialInfo() {
+        return this.http.get('../assets/social.json')
+        .map(res => <Social>res.json());
     }
 }

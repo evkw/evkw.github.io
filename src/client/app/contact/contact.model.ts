@@ -63,3 +63,9 @@ export interface Date {
     month: number;
     year: number;
 }
+
+export interface Social {
+    facebook: string;
+    github: string;
+    twitter: string;
+}
