@@ -14,16 +14,14 @@
 .logo-item {
     max-width: 50%;
     font-size: 32px;
-    margin: 7% 7% 0 0;
+    margin: 7% 0 0 0
 }
 
 .name {
-    margin: 5% 7% 0 0;
+    margin: 7% 0 0 7%;
+    text-transform: uppercase;
 }
 
-flex-item {
-    
-}
 
 .center {
     max-width: 50%;
