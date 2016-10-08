@@ -4,7 +4,7 @@ import { Observable } from 'rxjs/Observable';
 import { Subscription } from 'rxjs/Subscription';
 
 import { ContactService } from '../contact/contact.service';
-import { Social } from '../contact/contact.model';
+import { Social } from '../shared/models/contact.model';
 
 @Component({
     moduleId: module.id,

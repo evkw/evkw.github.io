@@ -9,6 +9,7 @@ export interface Contact {
     summary: string;
     threeCurrentPositions: CurrentPositions;
     threePastPositions: PastPositions;
+    educations: Educations;
 }
 
 export interface Location {
@@ -68,4 +69,19 @@ export interface Social {
     facebook: string;
     github: string;
     twitter: string;
+}
+
+export interface Educations {
+    _total: number;
+    values: Education[];
+}
+
+export interface Education {
+    degree: string;
+    endDate: Date;
+    fieldOfStudy: string;
+    grade: any;
+    id: number;
+    schoolName: string;
+    startDate: Date;
 }

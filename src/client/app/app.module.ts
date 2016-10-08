@@ -7,6 +7,7 @@ import { AppComponent } from './app.component';
 
 import { ContactModule } from './contact/contact.module';
 import { ExperienceModule } from './experience/experience.module';
+import { EducationModule } from './education/education.module';
 
 @NgModule({
   imports:
@@ -14,7 +15,8 @@ import { ExperienceModule } from './experience/experience.module';
     BrowserModule,
     HttpModule,
     ContactModule,
-    ExperienceModule
+    ExperienceModule,
+    EducationModule
   ],
   declarations: [AppComponent],
   providers: [{

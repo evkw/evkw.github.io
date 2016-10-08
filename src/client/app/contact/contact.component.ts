@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import * as Rx from 'rxjs/Rx';
 
 import { ContactService } from './contact.service';
-import { Contact } from './contact.model';
+import { Contact } from '../shared/models/contact.model';
 
 @Component({
     moduleId: module.id,

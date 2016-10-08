@@ -3,7 +3,7 @@ import { Component, OnInit, Input, OnDestroy } from '@angular/core';
 import { Observable } from 'rxjs/Observable';
 import { Subscription } from 'rxjs/Subscription';
 
-import { Contact } from '../contact/contact.model';
+import { Contact } from '../shared/models/contact.model';
 
 @Component({
     moduleId: module.id,

@@ -105,6 +105,24 @@
       }
     ]
   },
+  "educations":  {
+    "_total": 1,
+    "values":  [
+       {
+        "degree": "Bachelor of Computing",
+        "endDate":  {
+          "year": 2012
+        },
+        "fieldOfStudy": "Information Systems",
+        "grade":  {},
+        "id": 118688450,
+        "schoolName": "University of Western Sydney",
+        "startDate":  {
+          "year": 2010
+        }
+      }
+    ]
+  },
   "summary": "Full stack developer with 4 years experience in financial industries. Currently focusing on improving skills with Angular 2 for front end and implementing microservice structures server side.  ",
   "threeCurrentPositions": {
     "_total": 1,
