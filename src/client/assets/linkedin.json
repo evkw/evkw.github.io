@@ -1,0 +1,126 @@
+{
+  "firstName": "Evan",
+  "lastName": "Wallace",
+  "location":  {
+    "country":  {
+      "code": "au"
+    },
+    "name": "Sydney, Australia"
+  },
+  "skills":  {
+    "_total": 15,
+    "values":  []
+  },
+  "summary": "Full stack developer with 4 years experience in financial industries. Currently focusing on improving skills with Angular 2 for front end and implementing microservice structures server side.  ",
+  "threeCurrentPositions":  {
+    "_total": 1,
+    "values":  [
+       {
+        "company":  {
+          "id": 7697780,
+          "name": "Berkley Re Australia"
+        },
+        "id": 769685445,
+        "isCurrent": true,
+        "location":  {
+          "country":  {
+            "code": "au",
+            "name": "Australia"
+          },
+          "name": "Sydney, Australia"
+        },
+        "startDate":  {
+          "month": 11,
+          "year": 2015
+        },
+        "summary": "- Angular 2, .Net Core (C#), Entity Framework Core, NPM\n- Micro services, DDD\n- Agile ( 3 week sprints)\n- Financial Sector\n- Git source control",
+        "title": "Software Developer"
+      }
+    ]
+  },
+  "threePastPositions":  {
+    "_total": 3,
+    "values":  [
+       {
+        "company":  {
+          "id": 1321107,
+          "industry": "Insurance",
+          "name": "Asset Insure"
+        },
+        "endDate":  {
+          "month": 3,
+          "year": 2015
+        },
+        "id": 342820737,
+        "isCurrent": false,
+        "location":  {
+          "name": "Sydney, Australia"
+        },
+        "startDate":  {
+          "month": 11,
+          "year": 2012
+        },
+        "summary": "- WinForms, C#, UML, SQL\n- Waterfall delivery (3-5 month cycles)\n- Financial Sector\n- TFS source control",
+        "title": "Software Developer"
+      },
+       {
+        "company":  {
+          "id": 4990,
+          "industry": "Retail",
+          "name": "Toys R Us",
+          "size": "10001+",
+          "ticker": "TOY",
+          "type": "Privately Held"
+        },
+        "endDate":  {
+          "month": 3,
+          "year": 2011
+        },
+        "id": 302112634,
+        "isCurrent": false,
+        "location":  {
+          "country":  {
+            "code": "au",
+            "name": "Australia"
+          },
+          "name": "Sydney, Australia"
+        },
+        "startDate":  {
+          "month": 11,
+          "year": 2010
+        },
+        "summary": "- First level support (phone and desk)\n- Basic server maintenance\n- Data entry",
+        "title": "Helpdesk Support"
+      },
+       {
+        "company":  {
+          "id": 163225,
+          "industry": "Retail",
+          "name": "Costco Wholesale",
+          "size": "10001+",
+          "ticker": "COST",
+          "type": "Public Company"
+        },
+        "endDate":  {
+          "month": 9,
+          "year": 2009
+        },
+        "id": 302112819,
+        "isCurrent": false,
+        "location":  {
+          "country":  {
+            "code": "au",
+            "name": "Australia"
+          },
+          "name": "Sydney, Australia"
+        },
+        "startDate":  {
+          "month": 5,
+          "year": 2009
+        },
+        "summary": "- First level support (phone and desk)\n- Install computers and registers at new sites\n- New user records",
+        "title": "Helpdesk Support"
+      }
+    ]
+  }
+}

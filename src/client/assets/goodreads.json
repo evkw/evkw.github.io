@@ -1,0 +1,433 @@
+{
+	"reviews": {
+		"@start": "1",
+		"@end": "5",
+		"@total": "5",
+		"review": [{
+			"id": "1756380241",
+			"book": {
+				"id": {
+					"@type": "integer",
+					"#text": "26780374"
+				},
+				"isbn": "1680501291",
+				"isbn13": "9781680501292",
+				"text_reviews_count": {
+					"@type": "integer",
+					"#text": "3"
+				},
+				"title": "Reactive Programming with RxJS: Untangle Your Asynchronous JavaScript Code",
+				"image_url": "https://d.gr-assets.com/books/1444601658m/26780374.jpg",
+				"small_image_url": "https://d.gr-assets.com/books/1444601658s/26780374.jpg",
+				"large_image_url": null,
+				"link": "https://www.goodreads.com/book/show/26780374-reactive-programming-with-rxjs",
+				"num_pages": "140",
+				"format": "Paperback",
+				"edition_information": null,
+				"publisher": "Pragmatic Bookshelf",
+				"publication_day": "19",
+				"publication_year": "2015",
+				"publication_month": "12",
+				"average_rating": "3.78",
+				"ratings_count": "23",
+				"description": "Reactive programming is revolutionary. It makes asynchronous programming cleaner, intuitive, and robust. Discover how to use the RxJS library to write programs in a simpler way, unifying asynchronous mechanisms such as callbacks and promises into a single, powerful construct. Learn to think about your programs as streams of data that you can transform by expressing <i>what</i> should happen, instead of having to painstakingly program <i>how</i> it should happen. You'll be able to handle real-world concurrency and write complex flows of events in your applications with ease.<br><br>Create highly concurrent applications while writing simpler code using the Reactive Extensions for JavaScript (RxJS), a set of libraries for event composition. Programming real-world applications in JavaScript involves lots of asynchronous events--you might end up spending more time coordinating asynchronous code in your program than writing its actual functionality. This book introduces concepts and tools from reactive programming that will help you write cleaner and more robust asynchronous programs.<br><br>Find out about Observable sequences, a unifying data type to write highly concurrent code. Discover Schedulers and change the concept of time in your applications, making asynchronous testing sane again. Along the way you'll see real-world examples for the browser and Node.js, including a real-time earthquake visualization in 20 lines of code and a frantic shoot-'em-up space videogame. You'll also use Cycle.js - a modern, fully reactive web framework - to make a whole new breed of web applications.<br><br>By the end of the book, you'll know how to apply reactive programming to solve complex problems, build efficient programs with reactive user interfaces, and write your code more declaratively.<br><br><b>What You Need: </b><br><br>A modern web browser, Node.JS installed in your computer, and the RxJS JavaScript library.",
+				"authors": {
+					"author": {
+						"id": "14409596",
+						"name": "Sergi Mansilla",
+						"role": "",
+						"image_url": {
+							"@nophoto": "true",
+							"#cdata-section": "https://s.gr-assets.com/assets/nophoto/user/u_200x266-e183445fd1a1b5cc7075bb1cf7043306.png"
+						},
+						"small_image_url": {
+							"@nophoto": "true",
+							"#cdata-section": "https://s.gr-assets.com/assets/nophoto/user/u_50x66-632230dc9882b4352d753eedf9396530.png"
+						},
+						"link": {
+							"#cdata-section": "https://www.goodreads.com/author/show/14409596.Sergi_Mansilla"
+						},
+						"average_rating": "3.78",
+						"ratings_count": "23",
+						"text_reviews_count": "3"
+					}
+				},
+				"published": "2015"
+			},
+			"rating": "0",
+			"votes": "0",
+			"spoiler_flag": "false",
+			"spoilers_state": "none",
+			"shelves": {
+				"shelf": [{
+					"@name": "currently-reading",
+					"@exclusive": "true",
+					"@review_shelf_id": "1421236746",
+					"@sortable": "false"
+				},
+				{
+					"@name": "it",
+					"@exclusive": "false",
+					"@review_shelf_id": "1421236744",
+					"@sortable": "false"
+				}]
+			},
+			"recommended_for": "",
+			"recommended_by": "",
+			"started_at": "Mon Sep 12 18:38:33 -0700 2016",
+			"read_at": "",
+			"date_added": "Mon Sep 12 18:38:32 -0700 2016",
+			"date_updated": "Mon Sep 12 18:38:33 -0700 2016",
+			"read_count": "",
+			"body": "",
+			"comments_count": "0",
+			"url": {
+				"#cdata-section": "https://www.goodreads.com/review/show/1756380241"
+			},
+			"link": {
+				"#cdata-section": "https://www.goodreads.com/review/show/1756380241"
+			},
+			"owned": "0"
+		},
+		{
+			"id": "1744258140",
+			"book": {
+				"id": {
+					"@type": "integer",
+					"#text": "9407722"
+				},
+				"isbn": "1935182501",
+				"isbn13": "9781935182504",
+				"text_reviews_count": {
+					"@type": "integer",
+					"#text": "32"
+				},
+				"title": "Dependency Injection in .NET",
+				"image_url": "https://d.gr-assets.com/books/1361784483m/9407722.jpg",
+				"small_image_url": "https://d.gr-assets.com/books/1361784483s/9407722.jpg",
+				"large_image_url": null,
+				"link": "https://www.goodreads.com/book/show/9407722-dependency-injection-in-net",
+				"num_pages": "584",
+				"format": "Paperback",
+				"edition_information": "1 edition",
+				"publisher": "Manning Publications",
+				"publication_day": "28",
+				"publication_year": "2011",
+				"publication_month": "9",
+				"average_rating": "4.28",
+				"ratings_count": "309",
+				"description": "<b>Summary</b><br><br>Dependency Injection in .NET, winner of the 2013 Jolt Awards for Productivity, presents core DI patterns in plain C#, so you'll fully understand how DI works, covers integration with standard Microsoft technologies like ASP.NET MVC, and teaches you to use DI frameworks like Structure Map, Castle Windsor, and Unity.<br><br><b>About the Technology</b>Dependency Injection is a great way to reduce tight coupling between software components. Instead of hard-coding dependencies, such as specifying a database driver, you inject a list of services that a component may need. The services are then connected by a third party. This technique enables you to better manage future changes and other complexity in your software.<br><br><b>About this Book</b><i>Dependency Injection in .NET</i> introduces DI and provides a practical guide for applying it in .NET applications. The book presents the core patterns in plain C#, so you'll fully understand how DI works. Then you'll learn to integrate DI with standard Microsoft technologies like ASP.NET MVC, and to use DI frameworks like StructureMap, Castle Windsor, and Unity. By the end of the book, you'll be comfortable applying this powerful technique in your everyday .NET development.<br><br>This book is written for C# developers. No previous experience with DI or DI frameworks is required.<br><br>Purchase of the print book comes with an offer of a free PDF, ePub, and Kindle eBook from Manning. Also available is all code from the book.<br><br>Winner of 2013 Jolt Awards: The Best Books—one of five notable books every serious programmer should read.<br><br><b>What's Inside</b><br><br><br>Many C#-based examples A catalog of DI patterns and anti-patterns Using both Microsoft and open source DI frameworks<br><br><b>Tabel of Contents</b><br>PART 1 PUTTING DEPENDENCY INJECTION ON THE MAP A Dependency Injection tasting menu A comprehensive example DI Containers PART 2 DI CATALOG DI patterns DI anti-patterns DI refactorings PART 3 DIY DI Object Composition Object Lifetime Interception PART 4 DI CONTAINERS Castle Windsor StructureMap Spring.NET Autofac Unity MEF",
+				"authors": {
+					"author": {
+						"id": "4383188",
+						"name": "Mark Seemann",
+						"role": "",
+						"image_url": {
+							"@nophoto": "false",
+							"#cdata-section": "https://d.gr-assets.com/authors/1416675262p5/4383188.jpg"
+						},
+						"small_image_url": {
+							"@nophoto": "false",
+							"#cdata-section": "https://d.gr-assets.com/authors/1416675262p2/4383188.jpg"
+						},
+						"link": {
+							"#cdata-section": "https://www.goodreads.com/author/show/4383188.Mark_Seemann"
+						},
+						"average_rating": "4.28",
+						"ratings_count": "309",
+						"text_reviews_count": "32"
+					}
+				},
+				"published": "2011"
+			},
+			"rating": "4",
+			"votes": "0",
+			"spoiler_flag": "false",
+			"spoilers_state": "none",
+			"shelves": {
+				"shelf": [{
+					"@name": "read",
+					"@exclusive": "true"
+				},
+				{
+					"@name": "it",
+					"@exclusive": "false",
+					"@review_shelf_id": "1409914364",
+					"@sortable": "false"
+				}]
+			},
+			"recommended_for": "",
+			"recommended_by": "",
+			"started_at": "",
+			"read_at": "",
+			"date_added": "Wed Aug 31 06:41:34 -0700 2016",
+			"date_updated": "Tue Sep 20 20:21:35 -0700 2016",
+			"read_count": "",
+			"body": "",
+			"comments_count": "0",
+			"url": {
+				"#cdata-section": "https://www.goodreads.com/review/show/1744258140"
+			},
+			"link": {
+				"#cdata-section": "https://www.goodreads.com/review/show/1744258140"
+			},
+			"owned": "0"
+		},
+		{
+			"id": "1744257968",
+			"book": {
+				"id": {
+					"@type": "integer",
+					"#text": "6487349"
+				},
+				"isbn": "1933988274",
+				"isbn13": "9781933988276",
+				"text_reviews_count": {
+					"@type": "integer",
+					"#text": "47"
+				},
+				"title": "The Art of Unit Testing: With Examples in .NET",
+				"image_url": "https://s.gr-assets.com/assets/nophoto/book/111x148-bcc042a9c91a29c1d680899eff700a03.png",
+				"small_image_url": "https://s.gr-assets.com/assets/nophoto/book/50x75-a91bf249278a81aabab721ef782c4a74.png",
+				"large_image_url": null,
+				"link": "https://www.goodreads.com/book/show/6487349-the-art-of-unit-testing",
+				"num_pages": "320",
+				"format": "Paperback",
+				"edition_information": null,
+				"publisher": "Manning Publications",
+				"publication_day": "5",
+				"publication_year": "2009",
+				"publication_month": "7",
+				"average_rating": "4.08",
+				"ratings_count": "764",
+				"description": "Unit testing, done right, can mean the difference between a failed project and a successful one, between a maintainable code base and a code base that no one dares touch, and between getting home at 2 AM or getting home in time for dinner, even before a release deadline.<br><br><i>The Art of Unit Testing</i> builds on top of what's already been written about this important topic. It guides you step by step from simple tests to tests that are maintainable, readable, and trustworthy. It covers advanced subjects like mocks, stubs, and frameworks such as Typemock Isolator and Rhino Mocks. And you'll learn about advanced test patterns and organization, working with legacy code and even untestable code. The book discusses tools you need when testing databases and other technologies. It's written for .NET developers but others will also benefit from this book.<br><br>Purchase of the print book comes with an offer of a free PDF, ePub, and Kindle eBook from Manning. Also available is all code from the book.<br><br><b>Table of Contents</b><br><br><br>The basics of unit testing<br>A first unit test<br>Using stubs to break dependencies<br>Interaction testing using mock objects<br>Isolation (mock object) frameworks<br>Test hierarchies and organization<br>The pillars of good tests<br>Integrating unit testing into the organization<br>Working with legacy code",
+				"authors": {
+					"author": {
+						"id": "2938301",
+						"name": "Roy Osherove",
+						"role": "",
+						"image_url": {
+							"@nophoto": "false",
+							"#cdata-section": "https://d.gr-assets.com/authors/1442501398p5/2938301.jpg"
+						},
+						"small_image_url": {
+							"@nophoto": "false",
+							"#cdata-section": "https://d.gr-assets.com/authors/1442501398p2/2938301.jpg"
+						},
+						"link": {
+							"#cdata-section": "https://www.goodreads.com/author/show/2938301.Roy_Osherove"
+						},
+						"average_rating": "3.99",
+						"ratings_count": "998",
+						"text_reviews_count": "86"
+					}
+				},
+				"published": "2009"
+			},
+			"rating": "4",
+			"votes": "0",
+			"spoiler_flag": "false",
+			"spoilers_state": "none",
+			"shelves": {
+				"shelf": [{
+					"@name": "read",
+					"@exclusive": "true"
+				},
+				{
+					"@name": "it",
+					"@exclusive": "false",
+					"@review_shelf_id": "1409914215",
+					"@sortable": "false"
+				}]
+			},
+			"recommended_for": "",
+			"recommended_by": "",
+			"started_at": "",
+			"read_at": "",
+			"date_added": "Wed Aug 31 06:41:24 -0700 2016",
+			"date_updated": "Tue Sep 20 20:21:37 -0700 2016",
+			"read_count": "",
+			"body": "",
+			"comments_count": "0",
+			"url": {
+				"#cdata-section": "https://www.goodreads.com/review/show/1744257968"
+			},
+			"link": {
+				"#cdata-section": "https://www.goodreads.com/review/show/1744257968"
+			},
+			"owned": "0"
+		},
+		{
+			"id": "1736383791",
+			"book": {
+				"id": {
+					"@type": "integer",
+					"#text": "23232941"
+				},
+				"isbn": {
+					"@nil": "true"
+				},
+				"isbn13": "9781617292392",
+				"text_reviews_count": {
+					"@type": "integer",
+					"#text": "92"
+				},
+				"title": "Soft Skills",
+				"image_url": "https://d.gr-assets.com/books/1419180921m/23232941.jpg",
+				"small_image_url": "https://d.gr-assets.com/books/1419180921s/23232941.jpg",
+				"large_image_url": null,
+				"link": "https://www.goodreads.com/book/show/23232941-soft-skills",
+				"num_pages": "470",
+				"format": "Paperback",
+				"edition_information": null,
+				"publisher": "Manning Publications",
+				"publication_day": "",
+				"publication_year": "",
+				"publication_month": "",
+				"average_rating": "3.99",
+				"ratings_count": "649",
+				"description": "Soft Skills: The software developer's life manual is a unique guide, offering techniques and practices for a more satisfying life as a professional software developer. In it, developer and life coach John Sonmez addresses a wide range of important \"soft\" topics, from career and productivity to personal finance and investing, and even fitness and relationships, all from a developer-centric viewpoint.",
+				"authors": {
+					"author": {
+						"id": "8565253",
+						"name": "John Z. Sonmez",
+						"role": "",
+						"image_url": {
+							"@nophoto": "true",
+							"#cdata-section": "https://s.gr-assets.com/assets/nophoto/user/u_200x266-e183445fd1a1b5cc7075bb1cf7043306.png"
+						},
+						"small_image_url": {
+							"@nophoto": "true",
+							"#cdata-section": "https://s.gr-assets.com/assets/nophoto/user/u_50x66-632230dc9882b4352d753eedf9396530.png"
+						},
+						"link": {
+							"#cdata-section": "https://www.goodreads.com/author/show/8565253.John_Z_Sonmez"
+						},
+						"average_rating": "4.00",
+						"ratings_count": "653",
+						"text_reviews_count": "106"
+					}
+				},
+				"published": ""
+			},
+			"rating": "4",
+			"votes": "0",
+			"spoiler_flag": "false",
+			"spoilers_state": "none",
+			"shelves": {
+				"shelf": [{
+					"@name": "read",
+					"@exclusive": "true"
+				},
+				{
+					"@name": "it",
+					"@exclusive": "false",
+					"@review_shelf_id": "1403313671",
+					"@sortable": "false"
+				}]
+			},
+			"recommended_for": "",
+			"recommended_by": "",
+			"started_at": "Tue Aug 23 00:00:00 -0700 2016",
+			"read_at": "Tue Sep 13 18:38:13 -0700 2016",
+			"date_added": "Mon Aug 22 23:51:23 -0700 2016",
+			"date_updated": "Mon Sep 12 18:38:13 -0700 2016",
+			"read_count": "",
+			"body": {
+				"#cdata-section": "I liked the first few sections alot.<br /><br />The finance one sounds great if i lived in america in the early/mid 2000s, but Sydney property market is a joke :( <br /><br />But wont let that ruin a great book, lots of great advice and thought provoking suggestions."
+			},
+			"comments_count": "0",
+			"url": {
+				"#cdata-section": "https://www.goodreads.com/review/show/1736383791"
+			},
+			"link": {
+				"#cdata-section": "https://www.goodreads.com/review/show/1736383791"
+			},
+			"owned": "0"
+		},
+		{
+			"id": "1727045631",
+			"book": {
+				"id": {
+					"@type": "integer",
+					"#text": "17255186"
+				},
+				"isbn": "0988262592",
+				"isbn13": "9780988262591",
+				"text_reviews_count": {
+					"@type": "integer",
+					"#text": "700"
+				},
+				"title": "The Phoenix Project: A Novel About IT, DevOps, and Helping Your Business Win",
+				"image_url": "https://d.gr-assets.com/books/1361113128m/17255186.jpg",
+				"small_image_url": "https://d.gr-assets.com/books/1361113128s/17255186.jpg",
+				"large_image_url": null,
+				"link": "https://www.goodreads.com/book/show/17255186-the-phoenix-project",
+				"num_pages": "345",
+				"format": "Hardcover",
+				"edition_information": null,
+				"publisher": "IT Revolution Press",
+				"publication_day": "10",
+				"publication_year": "2013",
+				"publication_month": "1",
+				"average_rating": "4.23",
+				"ratings_count": "7337",
+				"description": "Bill is an IT manager at Parts Unlimited. It's Tuesday morning and on his drive into the office, Bill gets a call from the CEO. <br><br>The company's new IT initiative, code named Phoenix Project, is critical to the future of Parts Unlimited, but the project is massively over budget and very late. The CEO wants Bill to report directly to him and fix the mess in ninety days or else Bill's entire department will be outsourced. <br><br>With the help of a prospective board member and his mysterious philosophy of The Three Ways, Bill starts to see that IT work has more in common with manufacturing plant work than he ever imagined. With the clock ticking, Bill must organize work flow streamline interdepartmental communications, and effectively serve the other business functions at Parts Unlimited. <br><br>In a fast-paced and entertaining style, three luminaries of the DevOps movement deliver a story that anyone who works in IT will recognize. Readers will not only learn how to improve their own IT organizations, they'll never view IT the same way again.",
+				"authors": {
+					"author": {
+						"id": "328437",
+						"name": "Gene Kim",
+						"role": "",
+						"image_url": {
+							"@nophoto": "false",
+							"#cdata-section": "https://d.gr-assets.com/authors/1361113444p5/328437.jpg"
+						},
+						"small_image_url": {
+							"@nophoto": "false",
+							"#cdata-section": "https://d.gr-assets.com/authors/1361113444p2/328437.jpg"
+						},
+						"link": {
+							"#cdata-section": "https://www.goodreads.com/author/show/328437.Gene_Kim"
+						},
+						"average_rating": "4.21",
+						"ratings_count": "7712",
+						"text_reviews_count": "844"
+					}
+				},
+				"published": "2013"
+			},
+			"rating": "5",
+			"votes": "0",
+			"spoiler_flag": "false",
+			"spoilers_state": "none",
+			"shelves": {
+				"shelf": [{
+					"@name": "read",
+					"@exclusive": "true"
+				},
+				{
+					"@name": "it",
+					"@exclusive": "false",
+					"@review_shelf_id": "1409913877",
+					"@sortable": "false"
+				}]
+			},
+			"recommended_for": "",
+			"recommended_by": "",
+			"started_at": "Sat Aug 13 04:01:12 -0700 2016",
+			"read_at": "Sun Aug 21 06:31:25 -0700 2016",
+			"date_added": "Sat Aug 13 04:01:11 -0700 2016",
+			"date_updated": "Wed Aug 31 06:41:03 -0700 2016",
+			"read_count": "",
+			"body": "",
+			"comments_count": "0",
+			"url": {
+				"#cdata-section": "https://www.goodreads.com/review/show/1727045631"
+			},
+			"link": {
+				"#cdata-section": "https://www.goodreads.com/review/show/1727045631"
+			},
+			"owned": "0"
+		}]
+	}
+}
