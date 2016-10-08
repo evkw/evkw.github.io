@@ -5,8 +5,15 @@ import { RouterModule } from '@angular/router';
 import { HttpModule } from '@angular/http';
 import { AppComponent } from './app.component';
 
+import { ContactModule } from './contact/contact.module';
+
 @NgModule({
-  imports: [BrowserModule, HttpModule],
+  imports:
+  [
+    BrowserModule,
+    HttpModule,
+    ContactModule
+  ],
   declarations: [AppComponent],
   providers: [{
     provide: APP_BASE_HREF,

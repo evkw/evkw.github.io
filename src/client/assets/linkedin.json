@@ -1,35 +1,127 @@
 {
+  "emailAddress": "wallace_evan10@hotmail.com",
   "firstName": "Evan",
   "lastName": "Wallace",
-  "location":  {
-    "country":  {
+  "location": {
+    "country": {
       "code": "au"
     },
     "name": "Sydney, Australia"
   },
-  "skills":  {
+  "skills": {
     "_total": 15,
-    "values":  []
+    "values": [
+      {
+        "id": 3,
+        "skill": {
+          "name": "Angular 2"
+        }
+      },
+      {
+        "id": 4,
+        "skill": {
+          "name": "Visual Studio Code"
+        }
+      },
+      {
+        "id": 5,
+        "skill": {
+          "name": ".NET"
+        }
+      },
+      {
+        "id": 6,
+        "skill": {
+          "name": "C#"
+        }
+      },
+      {
+        "id": 7,
+        "skill": {
+          "name": "Visual Studio"
+        }
+      },
+      {
+        "id": 9,
+        "skill": {
+          "name": "JavaScript"
+        }
+      },
+      {
+        "id": 10,
+        "skill": {
+          "name": "SQL"
+        }
+      },
+      {
+        "id": 11,
+        "skill": {
+          "name": "ASP.NET"
+        }
+      },
+      {
+        "id": 12,
+        "skill": {
+          "name": "Github"
+        }
+      },
+      {
+        "id": 13,
+        "skill": {
+          "name": "Entity Framework"
+        }
+      },
+      {
+        "id": 14,
+        "skill": {
+          "name": "Domain-Driven Design (DDD)"
+        }
+      },
+      {
+        "id": 23,
+        "skill": {
+          "name": "Microservices"
+        }
+      },
+      {
+        "id": 24,
+        "skill": {
+          "name": "Event Sourcing"
+        }
+      },
+      {
+        "id": 28,
+        "skill": {
+          "name": "TypeScript"
+        }
+      },
+      {
+        "id": 29,
+        "skill": {
+          "name": "Git"
+        }
+      }
+    ]
   },
   "summary": "Full stack developer with 4 years experience in financial industries. Currently focusing on improving skills with Angular 2 for front end and implementing microservice structures server side.  ",
-  "threeCurrentPositions":  {
+  "threeCurrentPositions": {
     "_total": 1,
-    "values":  [
-       {
-        "company":  {
+    "values": [
+      {
+        "company": {
           "id": 7697780,
           "name": "Berkley Re Australia"
         },
         "id": 769685445,
         "isCurrent": true,
-        "location":  {
-          "country":  {
+        "location": {
+          "country": {
             "code": "au",
             "name": "Australia"
           },
           "name": "Sydney, Australia"
         },
-        "startDate":  {
+        "startDate": {
           "month": 11,
           "year": 2015
         },
@@ -38,33 +130,33 @@
       }
     ]
   },
-  "threePastPositions":  {
+  "threePastPositions": {
     "_total": 3,
-    "values":  [
-       {
-        "company":  {
+    "values": [
+      {
+        "company": {
           "id": 1321107,
           "industry": "Insurance",
           "name": "Asset Insure"
         },
-        "endDate":  {
+        "endDate": {
           "month": 3,
           "year": 2015
         },
         "id": 342820737,
         "isCurrent": false,
-        "location":  {
+        "location": {
           "name": "Sydney, Australia"
         },
-        "startDate":  {
+        "startDate": {
           "month": 11,
           "year": 2012
         },
         "summary": "- WinForms, C#, UML, SQL\n- Waterfall delivery (3-5 month cycles)\n- Financial Sector\n- TFS source control",
         "title": "Software Developer"
       },
-       {
-        "company":  {
+      {
+        "company": {
           "id": 4990,
           "industry": "Retail",
           "name": "Toys R Us",
@@ -72,28 +164,28 @@
           "ticker": "TOY",
           "type": "Privately Held"
         },
-        "endDate":  {
+        "endDate": {
           "month": 3,
           "year": 2011
         },
         "id": 302112634,
         "isCurrent": false,
-        "location":  {
-          "country":  {
+        "location": {
+          "country": {
             "code": "au",
             "name": "Australia"
           },
           "name": "Sydney, Australia"
         },
-        "startDate":  {
+        "startDate": {
           "month": 11,
           "year": 2010
         },
         "summary": "- First level support (phone and desk)\n- Basic server maintenance\n- Data entry",
         "title": "Helpdesk Support"
       },
-       {
-        "company":  {
+      {
+        "company": {
           "id": 163225,
           "industry": "Retail",
           "name": "Costco Wholesale",
@@ -101,20 +193,20 @@
           "ticker": "COST",
           "type": "Public Company"
         },
-        "endDate":  {
+        "endDate": {
           "month": 9,
           "year": 2009
         },
         "id": 302112819,
         "isCurrent": false,
-        "location":  {
-          "country":  {
+        "location": {
+          "country": {
             "code": "au",
             "name": "Australia"
           },
           "name": "Sydney, Australia"
         },
-        "startDate":  {
+        "startDate": {
           "month": 5,
           "year": 2009
         },

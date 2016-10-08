@@ -366,6 +366,8 @@ export class SeedConfig {
       '@angular/platform-browser-dynamic/testing':
         'node_modules/@angular/platform-browser-dynamic/bundles/platform-browser-dynamic-testing.umd.js',
       '@angular/router/testing': 'node_modules/@angular/router/bundles/router-testing.umd.js',
+      '@ngrx/core': 'node_modules/@ngrx/core/index.js',
+      '@ngrx/store': 'node_modules/@ngrx/store/index.js',
 
       'app/*': '/app/*',
       // For test config
@@ -439,6 +441,14 @@ export class SeedConfig {
       'rxjs': {
         main: 'Rx.js',
         defaultExtension: 'js'
+      },
+      '@ngrx/core' : {
+        main: 'bundles/core.umd.js',
+        defaultExtension: 'js'
+      },
+      '@ngrx/store': {
+        main: 'bundles/store.umd.js',
+	      defaultExtension: 'js'
       }
     }
   };
