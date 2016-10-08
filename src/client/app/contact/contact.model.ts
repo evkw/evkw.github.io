@@ -3,6 +3,8 @@ export interface Contact {
     firstName: string;
     lastName: string;
     location: Location;
+    phone: string;
+    website: string;
     skills: ContactSkills;
     summary: string;
     threeCurrentPositions: CurrentPositions;

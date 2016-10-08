@@ -2,6 +2,8 @@
   "emailAddress": "wallace_evan10@hotmail.com",
   "firstName": "Evan",
   "lastName": "Wallace",
+  "website": "https://evkw.github.io",
+  "phone": "0415665934",
   "location": {
     "country": {
       "code": "au"

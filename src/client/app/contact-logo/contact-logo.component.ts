@@ -16,7 +16,6 @@ export class ContactLogoComponent implements OnInit, OnDestroy {
     @Input() contact: Observable<Contact>;
     private logo: Contact;
     private subscription: Subscription;
-    constructor() { }
 
     ngOnInit() {
         this.subscription = this.contact.subscribe(res => this.logo = res);
