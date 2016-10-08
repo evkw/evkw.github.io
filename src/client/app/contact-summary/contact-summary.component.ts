@@ -1,12 +1,26 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, OnDestroy, Input } from '@angular/core';
+import { Observable } from 'rxjs/Observable';
+import { Subscription } from 'rxjs/Subscription';
+
+import { Contact } from '../contact/contact.model';
 
 @Component({
     moduleId: module.id,
     selector: 'contact-summary',
-    templateUrl: 'contact-summary.component.html'
+    templateUrl: 'contact-summary.component.html',
+    styleUrls: ['contact-summary.component.css']
 })
-export class ContactSummaryComponent implements OnInit {
-    constructor() { }
+export class ContactSummaryComponent implements OnInit, OnDestroy {
 
-    ngOnInit() { }
+    @Input() contact: Observable<Contact>;
+    private summary: Contact;
+    private subscription: Subscription;
+
+    ngOnInit() { 
+        this.subscription = this.contact.subscribe(res => this.summary = res);
+    }
+
+    ngOnDestroy() {
+        this.subscription.unsubscribe();
+    }
 }

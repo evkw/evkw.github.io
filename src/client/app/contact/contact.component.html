@@ -1,8 +1,6 @@
 <div class="container">
-
-    <contact-logo class="flex-item" [contact]="contactObservable"></contact-logo>
-    <contact-details class="flex-item" [contact]="contactObservable"></contact-details>
-    <contact-social class="flex-item"></contact-social>
-    <contact-summary class="flex-item"></contact-summary>
-
+    <contact-logo [contact]="contactObservable"></contact-logo>
+    <contact-details [contact]="contactObservable"></contact-details>
+    <contact-summary [contact]="contactObservable"></contact-summary>
+    <contact-social></contact-social>
 </div>
