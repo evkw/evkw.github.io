@@ -6,13 +6,15 @@ import { HttpModule } from '@angular/http';
 import { AppComponent } from './app.component';
 
 import { ContactModule } from './contact/contact.module';
+import { ExperienceModule } from './experience/experience.module';
 
 @NgModule({
   imports:
   [
     BrowserModule,
     HttpModule,
-    ContactModule
+    ContactModule,
+    ExperienceModule
   ],
   declarations: [AppComponent],
   providers: [{

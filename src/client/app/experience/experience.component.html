@@ -1,0 +1,12 @@
+<div class="experience-container">
+    <div class="title">
+        Experience
+    </div>
+    <div class="position" *ngFor="let position of contact?.threeCurrentPositions?.values">
+        <experience-position [position]="position"></experience-position>
+    </div>
+
+    <div class="position" *ngFor="let position of contact?.threePastPositions?.values">
+        <experience-position [position]="position"></experience-position>
+    </div>
+</div>
