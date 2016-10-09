@@ -12,7 +12,7 @@ export interface CodeSchoolUser {
 }
 
 export interface Courses {
-    complete: Course[];
+    completed: Course[];
     in_progress: Course[];
 }
 

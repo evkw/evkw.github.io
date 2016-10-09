@@ -4,24 +4,25 @@ import { Observable } from 'rxjs/Observable';
 import { Subscription } from 'rxjs/Subscription';
 
 import { EducationService } from '../education/education.service';
-import { Educations } from '../shared/models/contact.model';
+import { Profile } from '../shared/models/codeschool.model';
 
 @Component({
     moduleId: module.id,
-    selector: 'edu-university',
-    templateUrl: 'education-university.component.html'
+    selector: 'edu-codeschool',
+    templateUrl: 'education-codeschool.component.html',
+    styleUrls: ['education-codeschool.component.css']
 })
-export class EducationUniversityComponent implements OnDestroy {
+export class EducationCodeSchoolComponent implements OnDestroy {
     private subscription: Subscription;
-    private education: Educations;
+    private profile: Profile;
 
     constructor(private educationService: EducationService) {
         this.subscription = this.educationService
-            .getUniversityInfo()
-            .subscribe(res => this.education = res);
+            .getCodeSchoolInfo()
+            .subscribe(res => this.profile = res)
     }
 
     ngOnDestroy() {
         this.subscription.unsubscribe();
-    }
+     }
 }

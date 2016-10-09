@@ -1,6 +1,6 @@
 import { Component, Input } from '@angular/core';
 
- import { Position } from '../contact/contact.model';
+ import { Position } from '../shared/models/contact.model';
 
 @Component({
     moduleId: module.id,

@@ -99,7 +99,7 @@ export class SeedConfig {
     coverageReporter: {
       dir: this.COVERAGE_DIR + '/',
       reporters: [
-        {type: 'json', subdir: '.', file: 'coverage-final.json'}
+        { type: 'json', subdir: '.', file: 'coverage-final.json' }
       ]
     }
   };
@@ -362,12 +362,11 @@ export class SeedConfig {
       '@angular/core/testing': 'node_modules/@angular/core/bundles/core-testing.umd.js',
       '@angular/http/testing': 'node_modules/@angular/http/bundles/http-testing.umd.js',
       '@angular/platform-browser/testing':
-        'node_modules/@angular/platform-browser/bundles/platform-browser-testing.umd.js',
+      'node_modules/@angular/platform-browser/bundles/platform-browser-testing.umd.js',
       '@angular/platform-browser-dynamic/testing':
-        'node_modules/@angular/platform-browser-dynamic/bundles/platform-browser-dynamic-testing.umd.js',
+      'node_modules/@angular/platform-browser-dynamic/bundles/platform-browser-dynamic-testing.umd.js',
       '@angular/router/testing': 'node_modules/@angular/router/bundles/router-testing.umd.js',
-      '@ngrx/core': 'node_modules/@ngrx/core/index.js',
-      '@ngrx/store': 'node_modules/@ngrx/store/index.js',
+      'dexie': 'node_modules/dexie/dist/dexie.min.js',
 
       'app/*': '/app/*',
       // For test config
@@ -442,13 +441,9 @@ export class SeedConfig {
         main: 'Rx.js',
         defaultExtension: 'js'
       },
-      '@ngrx/core' : {
-        main: 'bundles/core.umd.js',
+      'dexie': {
+        main: 'dist/dexie.min.js',
         defaultExtension: 'js'
-      },
-      '@ngrx/store': {
-        main: 'bundles/store.umd.js',
-	      defaultExtension: 'js'
       }
     }
   };
