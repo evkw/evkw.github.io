@@ -22,7 +22,9 @@
     ],
     "types": [
       "node",
-      "dexie"
+      "dexie",
+      "jquery",
+      "materialize-css"
     ]
   },
   "exclude": [

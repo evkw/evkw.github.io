@@ -1,4 +1,5 @@
 import { NgModule } from '@angular/core';
+import { ReactiveFormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 import { APP_BASE_HREF } from '@angular/common';
 import { HttpModule } from '@angular/http';
@@ -8,6 +9,8 @@ import { ContactModule } from './contact/contact.module';
 import { ExperienceModule } from './experience/experience.module';
 import { EducationModule } from './education/education.module';
 import { DatabaseService } from './shared/database/db.service';
+import { FormComponent } from './form/form.component';
+import { MaterialModule } from '@angular/material';
 
 @NgModule({
   imports:
@@ -16,9 +19,11 @@ import { DatabaseService } from './shared/database/db.service';
     HttpModule,
     ContactModule,
     ExperienceModule,
-    EducationModule
+    EducationModule,
+    ReactiveFormsModule,
+    MaterialModule.forRoot()
   ],
-  declarations: [AppComponent],
+  declarations: [AppComponent, FormComponent],
   providers:
   [{
     provide: APP_BASE_HREF,
