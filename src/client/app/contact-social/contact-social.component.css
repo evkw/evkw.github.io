@@ -15,6 +15,17 @@
 .social-item {
     width: 25%;
     font-size: 24px;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 640px) {
+		.social-item {
+            font-size: 30px;
+		}
+	}
+
+.social-item a {
+    color: black;
 }
 
 .social-item a:hover {

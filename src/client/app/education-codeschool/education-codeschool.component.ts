@@ -6,7 +6,7 @@ import { db } from '../shared/database/db';
     moduleId: module.id,
     selector: 'edu-codeschool',
     templateUrl: 'education-codeschool.component.html',
-    styleUrls: ['education-codeschool.component.css']
+    styleUrls: ['../app.component.css', 'education-codeschool.component.css']
 })
 export class EducationCodeSchoolComponent {
     private codeSchoolUser: CodeSchoolUser;

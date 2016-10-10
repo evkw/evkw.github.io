@@ -30,3 +30,8 @@
 .info {
     width: 55%;
 }
+
+.info a {
+    color: black;
+    cursor: pointer;
+}

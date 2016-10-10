@@ -4,6 +4,7 @@ import { UniversityDbModel } from './models/university-db.model';
 import { PositionDbModel } from './models/position-db.model';
 import { Social } from '../models/contact.model';
 import { Badge, CodeSchoolUser, Course} from '../models/codeschool.model';
+import { BookModel } from '../models/goodreads.model';
 
 import Dexie from 'dexie';
 
@@ -18,6 +19,7 @@ class AppDb extends Dexie {
     completed_courses: Dexie.Table<Course, number>;
     in_progress_courses: Dexie.Table<Course, number>;
     badges: Dexie.Table<Badge, number>;
+    books: Dexie.Table<BookModel, number>;
 
     constructor() {
         super('AppDb');
@@ -31,7 +33,8 @@ class AppDb extends Dexie {
             codeschool: 'id++, username, total_score, avatar',
             completed_courses: 'id++, title, url, badge',
             in_progress_courses: 'id++, title, url, badge',
-            badges: 'id++, name, badge, course_url'
+            badges: 'id++, name, badge, course_url',
+            books: 'id++, title, image_url, link'
         });
     }
 }

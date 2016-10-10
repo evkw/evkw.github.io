@@ -13,6 +13,7 @@ import { PositionDbModel } from './models/position-db.model';
 
 import { Contact, Social } from '../models/contact.model';
 import { Profile } from '../models/codeschool.model';
+import { GoodReadsReview, BookModel } from '../models/goodreads.model';
 
 @Injectable()
 export class DatabaseService {
@@ -29,8 +30,9 @@ export class DatabaseService {
             this.getContactForDb(),
             this.getSocialForDb(),
             this.getCodeSchoolforDb(),
-            (contact, social, codeschool) => {
-                if (contact && social && codeschool) {
+            this.getGoodReadBooksForDb(),
+            (contact, social, codeschool, goodreads) => {
+                if (contact && social && codeschool && goodreads) {
                     return true;
                 }
                 return false;
@@ -102,6 +104,23 @@ export class DatabaseService {
                 db.badges.bulkAdd(res.badges);
             })
             .map(res => true);
+    }
+
+    private getGoodReadBooksForDb(): Rx.Observable<boolean> {
+        return this.http.get('../../../assets/goodreads.json')
+        .map(res => <GoodReadsReview[]>res.json().reviews.review)
+        .do(res => {
+            db.books.bulkAdd(this.extractBookFromReview(res));
+        })
+        .map(res => true);
+    }
+
+    private extractBookFromReview(reviews: GoodReadsReview[]): BookModel[] {
+        let returnValue: BookModel[] = [];
+        reviews.forEach(x => {
+            returnValue.push(new BookModel(x));
+        })
+        return returnValue;
     }
 
 }
