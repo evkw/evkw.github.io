@@ -8,6 +8,7 @@ export class ContactDbModel {
     phone: string;
     website: string;
     summary: string;
+    location: string;
 
     constructor(contact: Contact) {
         this.emailAddress = contact.emailAddress;
@@ -16,5 +17,6 @@ export class ContactDbModel {
         this.phone = contact.phone;
         this.website = contact.website;
         this.summary = contact.summary;
+        this.location = contact.location.name;
     }
 }

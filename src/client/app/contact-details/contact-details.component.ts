@@ -1,9 +1,6 @@
-import { Component, OnInit, Input, OnDestroy } from '@angular/core';
-
-import { Observable } from 'rxjs/Observable';
-import { Subscription } from 'rxjs/Subscription';
-
-import { Contact } from '../shared/models/contact.model';
+import { Component } from '@angular/core';
+import { ContactDbModel } from '../shared/database/models/contact-db.model';
+import { db } from '../shared/database/db';
 
 @Component({
     moduleId: module.id,
@@ -11,17 +8,9 @@ import { Contact } from '../shared/models/contact.model';
     templateUrl: 'contact-details.component.html',
     styleUrls: ['contact-details.component.css']
 })
-export class ContactDetailsComponent implements OnInit, OnDestroy {
-
-    @Input() contact: Observable<Contact>;
-    private details: Contact;
-    private subscription: Subscription;
-
-    ngOnInit() {
-        this.subscription = this.contact.subscribe(res => this.details = res);
-    }
-
-    ngOnDestroy() {
-        this.subscription.unsubscribe();
+export class ContactDetailsComponent {
+    private details: ContactDbModel;
+    constructor() {
+        db.contact.get(1).then(res => this.details = res);
     }
 }

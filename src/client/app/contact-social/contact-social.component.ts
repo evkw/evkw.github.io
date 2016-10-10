@@ -1,10 +1,6 @@
-import { Component, OnInit, OnDestroy } from '@angular/core';
-
-import { Observable } from 'rxjs/Observable';
-import { Subscription } from 'rxjs/Subscription';
-
-import { ContactService } from '../contact/contact.service';
+import { Component } from '@angular/core';
 import { Social } from '../shared/models/contact.model';
+import { db } from '../shared/database/db';
 
 @Component({
     moduleId: module.id,
@@ -12,19 +8,10 @@ import { Social } from '../shared/models/contact.model';
     templateUrl: 'contact-social.component.html',
     styleUrls: ['contact-social.component.css']
 })
-export class ContactSocialComponent implements OnInit, OnDestroy {
+export class ContactSocialComponent {
 
     private social: Social;
-    private subscription: Subscription;
-    constructor(private contactService: ContactService) {
-        this.subscription = this.contactService
-            .getSocialInfo()
-            .subscribe(res => this.social = res);
-    }
-
-    ngOnInit() { }
-
-    ngOnDestroy() {
-        this.subscription.unsubscribe();
+    constructor() {
+        db.social.get(1).then(res => this.social = res);
     }
 }

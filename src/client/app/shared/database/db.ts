@@ -23,7 +23,7 @@ class AppDb extends Dexie {
     constructor() {
         super('AppDb');
         this.version(1).stores({
-            contact: 'id++, emailAddress, firstName, lastName, phone, website, summary',
+            contact: 'id++, emailAddress, firstName, lastName, phone, website, summary, location',
             skills: 'id++, name',
             university: 'id++, degree, endDate, fieldOfStudy, schoolName',
             social: 'id++, facebook, github, twitter',
