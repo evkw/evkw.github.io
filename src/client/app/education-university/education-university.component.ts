@@ -1,27 +1,16 @@
-import { Component, OnDestroy } from '@angular/core';
-
-import { Observable } from 'rxjs/Observable';
-import { Subscription } from 'rxjs/Subscription';
-
-import { EducationService } from '../education/education.service';
-import { Educations } from '../shared/models/contact.model';
+import { Component } from '@angular/core';
+import { UniversityDbModel } from '../shared/database/models/university-db.model';
+import { db } from '../shared/database/db';
 
 @Component({
     moduleId: module.id,
     selector: 'edu-university',
-    templateUrl: 'education-university.component.html'
+    templateUrl: 'education-university.component.html',
+    styleUrls: ['../app.component.css']
 })
-export class EducationUniversityComponent implements OnDestroy {
-    private subscription: Subscription;
-    private education: Educations;
-
-    constructor(private educationService: EducationService) {
-        this.subscription = this.educationService
-            .getUniversityInfo()
-            .subscribe(res => this.education = res);
-    }
-
-    ngOnDestroy() {
-        this.subscription.unsubscribe();
+export class EducationUniversityComponent {
+    private uni: UniversityDbModel;
+    constructor() {
+        db.university.get(1).then(res => this.uni = res);
     }
 }

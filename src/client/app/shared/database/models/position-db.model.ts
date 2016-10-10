@@ -1,3 +1,4 @@
+
 import { Position } from '../../models/contact.model';
 
 export class PositionDbModel {
@@ -47,6 +48,8 @@ export class PositionDbModel {
                 return 'Nov';
             case 12:
                 return 'Dec';
+            default:
+                return 'Jan';
 
         }
     }

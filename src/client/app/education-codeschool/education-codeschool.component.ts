@@ -1,10 +1,6 @@
-import { Component, OnDestroy } from '@angular/core';
-
-import { Observable } from 'rxjs/Observable';
-import { Subscription } from 'rxjs/Subscription';
-
-import { EducationService } from '../education/education.service';
-import { Profile } from '../shared/models/codeschool.model';
+import { Component } from '@angular/core';
+import { Course, CodeSchoolUser } from '../shared/models/codeschool.model';
+import { db } from '../shared/database/db';
 
 @Component({
     moduleId: module.id,
@@ -12,17 +8,12 @@ import { Profile } from '../shared/models/codeschool.model';
     templateUrl: 'education-codeschool.component.html',
     styleUrls: ['education-codeschool.component.css']
 })
-export class EducationCodeSchoolComponent implements OnDestroy {
-    private subscription: Subscription;
-    private profile: Profile;
+export class EducationCodeSchoolComponent {
+    private codeSchoolUser: CodeSchoolUser;
+    private courses: Course[] = [];
 
-    constructor(private educationService: EducationService) {
-        this.subscription = this.educationService
-            .getCodeSchoolInfo()
-            .subscribe(res => this.profile = res)
+    constructor() {
+        db.codeschool.get(1).then(res => this.codeSchoolUser = res);
+        db.completed_courses.toArray(res => this.courses = res);
     }
-
-    ngOnDestroy() {
-        this.subscription.unsubscribe();
-     }
 }

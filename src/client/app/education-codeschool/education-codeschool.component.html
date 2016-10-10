@@ -1,23 +1,17 @@
 <div class="title">
-    Code School <span class="new badge" data-badge-caption="Points">{{profile?.user?.total_score}}</span>
+    Code School <span class="new badge" data-badge-caption="Points">{{codeSchoolUser?.total_score}}</span>
 </div>
-
-<strong>Courses</strong>
-
 <div class="course-container">
-    <div class="course" *ngFor="let course of profile?.courses?.completed">
-
-        <div class="card">
-            <div class="card-image">
-                <img src="{{course?.badge}}">
-                <span class="card-title"></span>
+    <div class="course" *ngFor="let course of courses" href="course?.url">
+        <a href="{{course?.url}}">
+            <div class="card">
+                <div class="card-image">
+                    <img src="{{course?.badge}}">
+                    <span class="card-title"></span>
+                </div>
+                <div class="card-content">
+                    {{course?.title}}
+                </div>
             </div>
-            <div class="card-content">
-                {{course?.title}}
-            </div>
-        </div>
+        </a>
     </div>
-
-</div>
-
-{{profile | json}}

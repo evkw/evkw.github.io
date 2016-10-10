@@ -6,7 +6,7 @@ import { db } from '../shared/database/db';
     moduleId: module.id,
     selector: 'experience-position',
     templateUrl: 'experience-position.component.html',
-    styleUrls: ['experience-position.component.css']
+    styleUrls: ['../app.component.css','experience-position.component.css']
 })
 export class ExperiencePositionComponent {
     currentPositions: PositionDbModel[] = [];

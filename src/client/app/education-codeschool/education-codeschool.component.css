@@ -18,7 +18,28 @@
 }
 
 .course {
+    width: 20%;
+    cursor: pointer;
+}
+
+.course-img {
+   display: block;
+   position: relative;
+   left: 0;
+   right: 0;
+   bottom: 0;
+   top: 0;
+   width: 100%;
+}
+
+.card {
     background-color: #3B3C41;
-    width: 25%;
-    margin: 0.5%;
+    -webkit-transition: none;
+    -moz-transition: none;
+    transition: none;
+    box-shadow: none;
+    border: none;
+}
+a .card-content {
+    color: white;
 }
