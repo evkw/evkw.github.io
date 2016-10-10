@@ -1,4 +1,8 @@
-<div class="row">
+<div class="progress" *ngIf="!loadingComplete">
+    <div class="indeterminate"></div>
+</div>
+
+<div class="row" *ngIf="loadingComplete">
     <div class="col l5 contact">
         <contact-column></contact-column>
     </div>

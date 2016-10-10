@@ -1,9 +1,7 @@
 import { Component, Input, OnInit, OnDestroy } from '@angular/core';
 
-import { Observable } from 'rxjs/Observable';
-import { Subscription } from 'rxjs/Subscription';
-
-import { Contact } from '../shared/models/contact.model';
+import { ContactDbModel } from '../shared/database/models/contact-db.model';
+import { db } from '../shared/database/db';
 
 @Component({
     moduleId: module.id,
@@ -11,18 +9,10 @@ import { Contact } from '../shared/models/contact.model';
     templateUrl: 'contact-logo.component.html',
     styleUrls: ['contact-logo.component.css']
 })
-export class ContactLogoComponent implements OnInit, OnDestroy {
+export class ContactLogoComponent implements OnInit {
 
-    @Input() contact: Observable<Contact>;
-    private logo: Contact;
-    private subscription: Subscription;
-
+    private logo: ContactDbModel;
     ngOnInit() {
-        this.subscription = this.contact.subscribe(res => this.logo = res);
+        db.contact.get(1).then(res => this.logo = res);
     }
-
-    ngOnDestroy() {
-        this.subscription.unsubscribe();
-    }
-
 }

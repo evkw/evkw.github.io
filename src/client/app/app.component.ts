@@ -1,10 +1,8 @@
 import { Component } from '@angular/core';
 import './operators';
+import { DatabaseService } from './shared/database/db.service';
 
-/**
- * This class represents the main application component. Within the @Routes annotation is the configuration of the
- * applications routes, configuring the paths for the lazy loaded components (HomeComponent, AboutComponent).
- */
+
 @Component({
   moduleId: module.id,
   selector: 'sd-app',
@@ -13,5 +11,12 @@ import './operators';
 })
 
 export class AppComponent {
-  constructor() {}
+  private loadingComplete = false;
+  constructor(private databaseService: DatabaseService) {
+    if (navigator.onLine) {
+      databaseService.deleteDb();
+      databaseService.reloadDb()
+        .subscribe(complete => this.loadingComplete = complete);
+    }
+  }
 }

@@ -50,7 +50,8 @@ export interface Position {
     id: string;
     isCurrent: boolean;
     location: Location;
-    startDate: Date
+    startDate: Date;
+    endDate: Date;
     summary: string;
     title: string;
 }
