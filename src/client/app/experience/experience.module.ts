@@ -4,7 +4,7 @@ import { CommonModule } from '@angular/common';
 import { ExperienceComponent } from './experience.component';
 import { ExperiencePositionComponent } from '../experience-position/experience-position.component';
 import { ExperienceSkillsComponent } from '../experience-skills/experience-skills.component';
-import { ContactService } from '../contact/contact.service';
+import { PositionTemplateComponent } from '../experience-position/position-template.component';
 
 @NgModule({
     imports: [CommonModule],
@@ -13,8 +13,8 @@ import { ContactService } from '../contact/contact.service';
     [
         ExperienceComponent,
         ExperiencePositionComponent,
-        ExperienceSkillsComponent
-    ],
-    providers: [ContactService],
+        ExperienceSkillsComponent,
+        PositionTemplateComponent
+    ]
 })
 export class ExperienceModule { }

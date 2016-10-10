@@ -1,6 +1,6 @@
-import { Component, Input } from '@angular/core';
-
- import { Position } from '../shared/models/contact.model';
+import { Component } from '@angular/core';
+import { PositionDbModel } from '../shared/database/models/position-db.model';
+import { db } from '../shared/database/db';
 
 @Component({
     moduleId: module.id,
@@ -9,6 +9,10 @@ import { Component, Input } from '@angular/core';
     styleUrls: ['experience-position.component.css']
 })
 export class ExperiencePositionComponent {
-    @Input() position: any;
-    constructor() { }
+    currentPositions: PositionDbModel[] = [];
+    pastPositions: PositionDbModel[] = [];
+    constructor() {
+        db.past_positions.toArray(res => this.pastPositions = res);
+        db.current_positions.toArray(res => this.currentPositions = res);
+    }
 }

@@ -9,8 +9,7 @@ import * as Rx from 'rxjs/Rx';
 import { ContactDbModel } from './models/contact-db.model';
 import { UniversityDbModel } from './models/university-db.model';
 import { SkillDbModel } from './models/skill-db.model';
-import { CurrentPositionDbModel } from './models/current-position-db.model';
-import { PastPositionDbModel } from './models/past-position-db.model';
+import { PositionDbModel } from './models/position-db.model';
 
 import { Contact, Social } from '../models/contact.model';
 import { Profile } from '../models/codeschool.model';
@@ -68,18 +67,18 @@ export class DatabaseService {
         return returnValue;
     }
 
-    private extractCurrentPositions(contact: Contact): CurrentPositionDbModel[] {
-        let returnValue: CurrentPositionDbModel[] = [];
+    private extractCurrentPositions(contact: Contact): PositionDbModel[] {
+        let returnValue: PositionDbModel[] = [];
         contact.threeCurrentPositions.values.forEach(x => {
-            returnValue.push(new CurrentPositionDbModel(x));
+            returnValue.push(new PositionDbModel(x));
         });
         return returnValue;
     }
 
-    private extractPastPositions(contact: Contact): PastPositionDbModel[] {
-        let returnValue: PastPositionDbModel[] = [];
+    private extractPastPositions(contact: Contact): PositionDbModel[] {
+        let returnValue: PositionDbModel[] = [];
         contact.threePastPositions.values.forEach(x => {
-            returnValue.push(new PastPositionDbModel(x));
+            returnValue.push(new PositionDbModel(x));
         });
         return returnValue;
     }
