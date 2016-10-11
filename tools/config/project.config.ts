@@ -20,8 +20,6 @@ export class ProjectConfig extends SeedConfig {
     // Add `NPM` third-party libraries to be injected/bundled.
     this.NPM_DEPENDENCIES = [
       ...this.NPM_DEPENDENCIES,
-       {src: 'jquery/dist/jquery.min.js', inject: 'libs'},
-       {src: 'jquery-validation/dist/jquery.validate.js', inject: 'libs'},
       // {src: 'lodash/lodash.min.js', inject: 'libs'},
       {src: 'dexie/dist/dexie.min.js', inject: 'libs'},
     ];

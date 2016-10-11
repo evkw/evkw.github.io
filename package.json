@@ -148,6 +148,7 @@
     "@types/jquery": "^2.0.33",
     "@types/jquery.validation": "^1.13.31",
     "@types/materialize-css": "^0.97.31",
+    "@types/protractor": "^1.5.20",
     "core-js": "^2.4.1",
     "dexie": "^1.4.2",
     "es-module-loader": "^1.0.0",
