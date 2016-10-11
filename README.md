@@ -6,7 +6,7 @@ At the moment it is using json files generated from code school and linkedIn. Pl
 
 Good reads was turned off for now due to styling issues, images returned are not good enough quality.
 
-Build with offline first in mind. 
+Build with offline first in mind and to be accessible.
 
 Styles using Materialize.css as well as native flexbox.
 
@@ -20,8 +20,10 @@ npm install
 
 ##Production build
 
-npm run serve.prod
+npm run build.prod
+npm start
 
 ##Development build
 
-npm run serve.dev
+npm run build.dev
+npm start
