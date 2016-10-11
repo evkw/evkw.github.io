@@ -4,7 +4,6 @@ import { Http } from '@angular/http';
 import { db } from './db';
 import 'rxjs/add/operator/map';
 import 'rxjs/add/operator/do';
-import * as Rx from 'rxjs/Rx';
 
 import { ContactDbModel } from './models/contact-db.model';
 import { UniversityDbModel } from './models/university-db.model';
@@ -18,42 +17,38 @@ import { GoodReadsReview, BookModel } from '../models/goodreads.model';
 @Injectable()
 export class DatabaseService {
 
+    loadingStatus: LoadingStatus = new LoadingStatus();
+
     constructor(private http: Http) { }
 
     deleteDb() {
+        console.log('Deleting Database');
         db.delete();
-    }
-
-    reloadDb() {
         db.open();
     }
 
-    waitForComplete() {
-        return Rx.Observable.combineLatest(
-            this.getContactForDb(),
-            this.getSocialForDb(),
-            this.getCodeSchoolforDb(),
-            this.getGoodReadBooksForDb(),
-            (contact, social, codeschool, goodreads) => {
-                if (contact && social && codeschool && goodreads) {
-                    return true;
-                }
-                return false;
-            }
-        );
+    reloadDb() {
+        console.log('Re-openning Database');
+        db.open().then(() => {
+            this.getSocialForDb();
+            this.getCodeSchoolforDb();
+            this.getContactForDb();
+            this.getGoodReadBooksForDb();
+        });
     }
 
-    public getContactForDb(): Rx.Observable<boolean> {
-        return this.http.get('../../../assets/linkedin.json')
+    public getContactForDb() {
+        this.http.get('../../../assets/linkedin.json')
             .map(res => <Contact>res.json())
-            .map(res => {
-                db.contact.add(new ContactDbModel(res));
-                db.university.bulkAdd(this.extractUniversities(res));
-                db.skills.bulkAdd(this.extractSkills(res));
-                db.current_positions.bulkAdd(this.extractCurrentPositions(res));
-                db.past_positions.bulkAdd(this.extractPastPositions(res));
-            })
-            .map(res => true);
+            .subscribe(res => {
+                db.contact.add(new ContactDbModel(res)).then(() => {
+                    db.university.bulkAdd(this.extractUniversities(res));
+                })
+                    .then(() => db.skills.bulkAdd(this.extractSkills(res))
+                        .then(() => db.current_positions.bulkAdd(this.extractCurrentPositions(res)))
+                        .then(() => db.past_positions.bulkAdd(this.extractPastPositions(res)))
+                        .then(() => this.loadingStatus.contactLoaded = true));
+            });
     }
 
     private extractUniversities(contact: Contact): UniversityDbModel[] {
@@ -88,34 +83,33 @@ export class DatabaseService {
         return returnValue;
     }
 
-    private getSocialForDb(): Rx.Observable<boolean> {
-        return this.http.get('../../../assets/social.json')
+    private getSocialForDb() {
+        this.http.get('../../../assets/social.json')
             .map(res => <Social>res.json())
-            .do(res => {
-                db.social.add(res);
-            })
-            .map(res => true);
+            .subscribe(res => {
+                db.social.add(res)
+                    .then(() => this.loadingStatus.socialLoaded = true);
+            });
     }
 
-    private getCodeSchoolforDb(): Rx.Observable<boolean> {
-        return this.http.get('../../../assets/codeschool.json')
+    private getCodeSchoolforDb() {
+        this.http.get('../../../assets/codeschool.json')
             .map(res => <Profile>res.json())
-            .do(res => {
-                db.codeschool.add(res.user);
-                db.in_progress_courses.bulkAdd(res.courses.in_progress);
-                db.completed_courses.bulkAdd(res.courses.completed);
-                db.badges.bulkAdd(res.badges);
-            })
-            .map(res => true);
+            .subscribe(res => {
+                db.codeschool.add(res.user).then(() => db.in_progress_courses.bulkAdd(res.courses.in_progress))
+                    .then(() => db.completed_courses.bulkAdd(res.courses.completed))
+                    .then(() => db.badges.bulkAdd(res.badges))
+                    .then(() => this.loadingStatus.codeschoolLoaded = true);
+            });
     }
 
-    private getGoodReadBooksForDb(): Rx.Observable<boolean> {
-        return this.http.get('../../../assets/goodreads.json')
+    private getGoodReadBooksForDb() {
+        this.http.get('../../../assets/goodreads.json')
             .map(res => <GoodReadsReview[]>res.json().reviews.review)
-            .do(res => {
-                db.books.bulkAdd(this.extractBookFromReview(res));
-            })
-            .map(res => true);
+            .subscribe(res => {
+                db.books.bulkAdd(this.extractBookFromReview(res))
+                    .then(() => this.loadingStatus.goodReadsLoaded = true);
+            });
     }
 
     private extractBookFromReview(reviews: GoodReadsReview[]): BookModel[] {
@@ -126,4 +120,19 @@ export class DatabaseService {
         return returnValue;
     }
 
+}
+
+class LoadingStatus {
+    contactLoaded: boolean;
+    goodReadsLoaded: boolean;
+    codeschoolLoaded: boolean;
+    socialLoaded: boolean;
+
+    allLoaded() {
+        console.log(this);
+        return this.contactLoaded &&
+            this.goodReadsLoaded &&
+            this.codeschoolLoaded &&
+            this.socialLoaded;
+    }
 }
