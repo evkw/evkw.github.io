@@ -20,10 +20,8 @@ npm install
 
 ##Production build
 
-npm run build.prod
-npm start
+npm run serve.prod
 
 ##Development build
 
-npm run build.dev
-npm start
+npm run serve.dev

@@ -367,8 +367,6 @@ export class SeedConfig {
       'node_modules/@angular/platform-browser-dynamic/bundles/platform-browser-dynamic-testing.umd.js',
       '@angular/router/testing': 'node_modules/@angular/router/bundles/router-testing.umd.js',
       'dexie': 'node_modules/dexie/dist/dexie.min.js',
-      'jquery': 'node_modules/jquery/dist/jquery.min.js',
-      'jquery-validation': 'node_modules/jquery-validation/dist/jquery.validate.js',
 
       'app/*': '/app/*',
       // For test config
@@ -445,14 +443,6 @@ export class SeedConfig {
       },
       'dexie': {
         main: 'dist/dexie.min.js',
-        defaultExtension: 'js'
-      },
-      'jquery': {
-        main: 'dist/jquery.min.js',
-        defaultExtension: 'js'
-      },
-      'jquery-validation': {
-        main: 'dist/jquery.validate.js',
         defaultExtension: 'js'
       }
     }
