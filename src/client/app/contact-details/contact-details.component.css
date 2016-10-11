@@ -1,0 +1,37 @@
+.detail {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  margin: 0;
+  -webkit-flex-flow: column wrap;
+  flex-flow: column wrap;
+  margin-top: 15%;
+ 
+}
+
+.item {
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  flex-flow: row wrap;
+  margin-bottom: 2%;
+}
+
+.filler {
+    width: 20%;
+}
+
+.title {
+    width: 20%;
+    font-weight: bold;
+}
+
+.info {
+    width: 55%;
+}
+
+.info a {
+    color: black;
+    cursor: pointer;
+}

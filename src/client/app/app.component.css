@@ -1,0 +1,15 @@
+.details {
+    background-color: #3B3C41;
+    color: #fff;
+}
+
+.title {
+    color: #85CDC9;
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 7%;
+}
+
+.md-input-underline {
+    display: none !important;
+}

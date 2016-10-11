@@ -1,0 +1,17 @@
+<div class="title">
+    Good Reads <!--<span class="new badge" data-badge-caption="Books Read">{{books?.length}}</span>-->
+</div>
+<div class="books-container">
+    <div class="book" *ngFor="let book of books">
+        <a href="{{book?.link}}">
+            <div class="card">
+                <div class="card-image">
+                    <img src="{{book?.image_url}}" alt="{{book?.title}}">
+                </div>
+                <div class="card-content">
+                    {{book?.title}}
+                </div>
+            </div>
+        </a>
+    </div>
+</div>

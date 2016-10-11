@@ -99,7 +99,7 @@ export class SeedConfig {
     coverageReporter: {
       dir: this.COVERAGE_DIR + '/',
       reporters: [
-        {type: 'json', subdir: '.', file: 'coverage-final.json'}
+        { type: 'json', subdir: '.', file: 'coverage-final.json' }
       ]
     }
   };
@@ -176,7 +176,7 @@ export class SeedConfig {
    * `index.html`.
    * @type {string}
    */
-  APP_TITLE = 'Welcome to angular2-seed!';
+  APP_TITLE = 'Living Resume';
 
   /**
    * The base folder of the applications source files.
@@ -362,10 +362,13 @@ export class SeedConfig {
       '@angular/core/testing': 'node_modules/@angular/core/bundles/core-testing.umd.js',
       '@angular/http/testing': 'node_modules/@angular/http/bundles/http-testing.umd.js',
       '@angular/platform-browser/testing':
-        'node_modules/@angular/platform-browser/bundles/platform-browser-testing.umd.js',
+      'node_modules/@angular/platform-browser/bundles/platform-browser-testing.umd.js',
       '@angular/platform-browser-dynamic/testing':
-        'node_modules/@angular/platform-browser-dynamic/bundles/platform-browser-dynamic-testing.umd.js',
+      'node_modules/@angular/platform-browser-dynamic/bundles/platform-browser-dynamic-testing.umd.js',
       '@angular/router/testing': 'node_modules/@angular/router/bundles/router-testing.umd.js',
+      'dexie': 'node_modules/dexie/dist/dexie.min.js',
+      'jquery': 'node_modules/jquery/dist/jquery.min.js',
+      'jquery-validation': 'node_modules/jquery-validation/dist/jquery.validate.js',
 
       'app/*': '/app/*',
       // For test config
@@ -438,6 +441,18 @@ export class SeedConfig {
       },
       'rxjs': {
         main: 'Rx.js',
+        defaultExtension: 'js'
+      },
+      'dexie': {
+        main: 'dist/dexie.min.js',
+        defaultExtension: 'js'
+      },
+      'jquery': {
+        main: 'dist/jquery.min.js',
+        defaultExtension: 'js'
+      },
+      'jquery-validation': {
+        main: 'dist/jquery.validate.js',
         defaultExtension: 'js'
       }
     }

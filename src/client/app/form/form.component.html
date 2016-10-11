@@ -1,0 +1,31 @@
+<div class="title">
+	Contact me
+</div>
+<div class="row">
+	<form class="col s12" id="form" [formGroup]="formGroup">
+		<div class="row">
+			<div class="input-field col s12">
+				<input placeholder="Enter Your Name" formControlName="name" id="name" type="text" class="validate" [ngClass]="{invalid: !formGroup.controls['name'].pristine && !formGroup.controls['name'].valid}" required="" aria-required="true" aria-label="name">
+				<label *ngIf="formGroup.controls['name'].pristine || formGroup.controls['name'].valid"for="name" style="color: white;">Name</label>
+                <label *ngIf="!formGroup.controls['name'].pristine && !formGroup.controls['name'].valid" for="name" class="active" style="color: red;">Name is required</label>
+			</div>
+			<div class="input-field col s12">
+				<input placeholder="Enter A Subject" formControlName="subject" id="subject" type="text" [ngClass]="{invalid: !formGroup.controls['subject'].pristine && !formGroup.controls['subject'].valid}" required="" aria-required="true" aria-label="subject">
+				<label *ngIf="formGroup.controls['subject'].pristine || formGroup.controls['subject'].valid" for="subject"style="color: white;">Subject</label>
+                <label *ngIf="!formGroup.controls['subject'].pristine && !formGroup.controls['subject'].valid" for="name" class="active" style="color: red;">Subject is required</label>
+			</div>
+			<div class="input-field col s12">
+				<input placeholder="Enter Email" formControlName="email" id="email" type="email" [ngClass]="{invalid: !formGroup.controls['email'].pristine && !formGroup.controls['email'].valid}" required="" aria-required="true" aria-label="email">
+				<label *ngIf="formGroup.controls['email'].pristine || formGroup.controls['email'].valid" for="email" style="color: white;">Email</label>
+                <label *ngIf="!formGroup.controls['email'].pristine && !formGroup.controls['email'].valid" for="name" class="active" style="color: red;">Not a valid email</label>
+			</div>
+			<div class="input-field col s12">
+				<textarea id="message" formControlName="message" class="materialize-textarea validate" placeholder="Enter Message" required="" [ngClass]="{invalid: !formGroup.controls['message'].pristine && !formGroup.controls['message'].valid}" aria-required="true" aria-label="message"></textarea>
+				<label *ngIf="formGroup.controls['message'].pristine || formGroup.controls['message'].valid" for="name" style="color: white;">Message</label>
+                <label *ngIf="!formGroup.controls['message'].pristine && !formGroup.controls['message'].valid" for="name" class="active" style="color: red;">Message is required</label>
+			</div>
+		</div>
+
+        <button  class="waves-effect waves-light btn" style="background-color: white; color: black" [disabled]="!formGroup.valid" (click)="submitForm()">Submit</button>
+	</form>
+</div>

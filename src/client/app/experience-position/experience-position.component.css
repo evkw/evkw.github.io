@@ -1,0 +1,26 @@
+.name, .title {
+    font-weight: bold;
+}
+
+.position {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  margin-bottom: 3%;
+  font-size: 12px;
+  flex-direction: column;
+}
+
+.left {
+    width: 25%;
+}
+
+.filler {
+    width: 2%;
+}
+
+.right {
+    width: 55%;
+}
