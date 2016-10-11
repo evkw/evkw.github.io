@@ -26,6 +26,9 @@ export class DatabaseService {
 
     reloadDb() {
         db.open();
+    }
+
+    waitForComplete() {
         return Rx.Observable.combineLatest(
             this.getContactForDb(),
             this.getSocialForDb(),
@@ -100,7 +103,7 @@ export class DatabaseService {
             .do(res => {
                 db.codeschool.add(res.user);
                 db.in_progress_courses.bulkAdd(res.courses.in_progress);
-                db.completed_courses.bulkAdd(res.courses.completed)
+                db.completed_courses.bulkAdd(res.courses.completed);
                 db.badges.bulkAdd(res.badges);
             })
             .map(res => true);
@@ -108,18 +111,18 @@ export class DatabaseService {
 
     private getGoodReadBooksForDb(): Rx.Observable<boolean> {
         return this.http.get('../../../assets/goodreads.json')
-        .map(res => <GoodReadsReview[]>res.json().reviews.review)
-        .do(res => {
-            db.books.bulkAdd(this.extractBookFromReview(res));
-        })
-        .map(res => true);
+            .map(res => <GoodReadsReview[]>res.json().reviews.review)
+            .do(res => {
+                db.books.bulkAdd(this.extractBookFromReview(res));
+            })
+            .map(res => true);
     }
 
     private extractBookFromReview(reviews: GoodReadsReview[]): BookModel[] {
         let returnValue: BookModel[] = [];
         reviews.forEach(x => {
             returnValue.push(new BookModel(x));
-        })
+        });
         return returnValue;
     }
 

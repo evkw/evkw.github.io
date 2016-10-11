@@ -16,6 +16,7 @@
     "noImplicitReturns": true,
     "noImplicitUseStrict": false,
     "noFallthroughCasesInSwitch": true,
+    "allowSyntheticDefaultImports": true,
     "typeRoots": [
       "./node_modules/@types",
       "./node_modules"
@@ -24,7 +25,8 @@
       "node",
       "dexie",
       "jquery",
-      "materialize-css"
+      "materialize-css",
+      "jquery.validation"
     ]
   },
   "exclude": [

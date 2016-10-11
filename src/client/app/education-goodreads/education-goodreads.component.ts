@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { db } from '../shared/database/db';
-import { BookModel} from '../shared/models/goodreads.model';
+import { BookModel } from '../shared/models/goodreads.model';
 
 @Component({
     moduleId: module.id,
@@ -10,7 +10,7 @@ import { BookModel} from '../shared/models/goodreads.model';
 })
 export class EducationGoodReadsComponent {
     private books: BookModel[];
-    constructor() { 
+    constructor() {
         db.books.toArray(res => this.books = res);
     }
 }

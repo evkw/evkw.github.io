@@ -10,7 +10,6 @@ import { ExperienceModule } from './experience/experience.module';
 import { EducationModule } from './education/education.module';
 import { DatabaseService } from './shared/database/db.service';
 import { FormComponent } from './form/form.component';
-import { MaterialModule } from '@angular/material';
 
 @NgModule({
   imports:
@@ -20,8 +19,7 @@ import { MaterialModule } from '@angular/material';
     ContactModule,
     ExperienceModule,
     EducationModule,
-    ReactiveFormsModule,
-    MaterialModule.forRoot()
+    ReactiveFormsModule
   ],
   declarations: [AppComponent, FormComponent],
   providers:
