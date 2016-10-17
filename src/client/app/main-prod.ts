@@ -16,8 +16,13 @@ platformBrowser().bootstrapModuleFactory(AppModuleNgFactory);
 // https://developer.mozilla.org/en-US/docs/Web/API/Service_Worker_API/Using_Service_Workers
 //
 if ('serviceWorker' in navigator) {
-  (<any>navigator).serviceWorker.register('./worker.js').then((registration: any) =>
-      console.log('ServiceWorker registration successful with scope: ', registration.scope))
+  (<any>navigator).serviceWorker.register('./worker.js').then((registration: any) => {
+    console.log('ServiceWorker registration successful with scope: ');
+    console.log(registration);
+    registration.pushManager.subscribe({ userVisibleOnly: true }).then((sub: any) => {
+      console.log(sub);
+    });
+  })
     .catch((err: any) =>
       console.log('ServiceWorker registration failed: ', err));
 }
