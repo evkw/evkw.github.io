@@ -1,0 +1,44 @@
+article {
+    padding: 7% 0;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
+    background-color: #fff;
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    padding: 3% 0;
+    margin-left: 15%;
+    color: #767270;
+}
+
+.job-title {
+    display: flex;
+    flex-direction: row;
+    
+    h3 {
+        font-size: 12pt;
+        font-weight: 700;
+    }
+
+    h4 {
+        margin-left: 5px;
+    }
+}
+
+.job-times {
+    color: #5da4d9;
+}
+
+.card-body-content {
+    padding: 5px 0;
+}
+
+.job-details {
+    border-bottom: 1px solid #bdbdbd;
+    line-height: 14pt;
+
+    h4 {
+        font-weight: 700;
+    }
+}

@@ -1,0 +1,39 @@
+[
+    {
+        "position": "Senior Software Developer",
+        "company": "Berkley Insurance",
+        "start": "FEB 17",
+        "end": "CURRENT",
+        "responsibilities": "Development of Insurance Application, Training junior development team members, sprint planning and prioritization.",
+        "languages": [
+            {"name": "C#" },
+            {"name": "Typescript" },
+            {"name": "Javascript" },
+            {"name": "SQL" },
+            {"name": "HTML5" },
+            {"name": "CSS3" }
+        ],
+        "frameworks": [
+            {"name": ".Net core" },
+            {"name": "Entity Framework core" },
+            {"name": "Angular" },
+            {"name": "GIT"},
+            {"name": "xUnit"},
+            {"name": "Jasmine"},
+            {"name": "Protractor"}
+        ],
+        "methodologies": [
+            {"name": "Agile" },
+            {"name": "SCRUM" },
+            {"name": "Domain Driven Design" },
+            {"name": "Unit Testing"},
+            {"name": "Integration Testing"},
+            {"name": "Event Sourcing"},
+            {"name": "CQRS"},
+            {"name": "Continuous Integration"},
+            {"name": "Microservice Architecture"}
+        ]
+    }
+]
+
+

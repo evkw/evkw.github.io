@@ -1,5 +1,6 @@
 <div class="detail">
   <i class="material-icons">{{icon}}</i>
-  <p>{{text}}</p>
+  <div class="text" [ngClass]="{'divide': showDivide}">
+    <p>{{text}}</p>
+  </div>
 </div>
-<hr *ngIf="showDivide">

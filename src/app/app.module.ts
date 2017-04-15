@@ -6,6 +6,7 @@ import { HttpModule } from '@angular/http';
 import { AppComponent } from './app.component';
 
 import { ContactModule } from './contact/contact.module';
+import { ExperienceModule } from './experience/experience.module';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { ContactModule } from './contact/contact.module';
     HttpModule,
 
     // Feature Modules
-    ContactModule
+    ContactModule,
+    ExperienceModule
   ],
   providers: [],
   bootstrap: [AppComponent]

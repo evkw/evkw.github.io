@@ -1,0 +1,21 @@
+<article class="card">
+  <resume-title-card title="Work Experience" icon="business"></resume-title-card>
+  <div class="card-body" *ngFor="let job of jobs | async">
+    <div class="job-title card-body-content">
+      <h3>{{job?.position}}</h3>
+      <h4>@{{job?.company}}</h4>
+    </div>
+    <div class="job-times card-body-content">
+      {{job?.start}} - {{job?.end}}
+    </div>
+    <div class="job-details card-body-content">
+      {{job?.responsibilities}}
+      <div class="languages card-body-content">
+        <h4>Languages:</h4>
+        <div class="chip" *ngFor="let lang of job?.languages">
+          {{lang?.name}}
+        </div>
+      </div>
+    </div>
+  </div>
+</article>

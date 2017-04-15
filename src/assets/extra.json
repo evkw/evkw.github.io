@@ -1,0 +1,35 @@
+    // {
+    //     "position": "Software Developer",
+    //     "company": "Berkley Insurance",
+    //     "start": "NOV 15",
+    //     "end": "FEB 17",
+    //     "responsibilities": "Design and development of End to End Insurance solution and other tools for both IT department and business management reporting.",
+    //     "languages": [
+    //         {"name": "C#" },
+    //         {"name": "Typescript" },
+    //         {"name": "Javascript" },
+    //         {"name": "SQL" },
+    //         {"name": "HTML5" },
+    //         {"name": "CSS3" }
+    //     ],
+    //     "frameworks": [
+    //         {"name": ".Net core" },
+    //         {"name": "Entity Framework core" },
+    //         {"name": "Angular" },
+    //         {"name": "GIT"},
+    //         {"name": "xUnit"},
+    //         {"name": "Jasmine"},
+    //         {"name": "Protractor"}
+    //     ],
+    //     "methodologies": [
+    //         {"name": "Agile" },
+    //         {"name": "SCRUM" },
+    //         {"name": "Domain Driven Design" },
+    //         {"name": "Unit Testing"},
+    //         {"name": "Integration Testing"},
+    //         {"name": "Event Sourcing"},
+    //         {"name": "CQRS"},
+    //         {"name": "Continuous Integration"},
+    //         {"name": "Microservice Architecture"}
+    //     ]
+    // }
